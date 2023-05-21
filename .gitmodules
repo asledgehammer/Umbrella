@@ -1,3 +1,6 @@
 [submodule "Candle"]
 	path = Candle
 	url = https://github.com/asledgehammer/Candle.git
+[submodule "Events"]
+	path = Events
+	url = https://github.com/demiurgeQuantified/PZEventStubs
