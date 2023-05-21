@@ -1,0 +1,3 @@
+[submodule "Candle"]
+	path = Candle
+	url = https://github.com/asledgehammer/Candle.git
