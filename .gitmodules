@@ -4,3 +4,6 @@
 [submodule "Events"]
 	path = Events
 	url = https://github.com/demiurgeQuantified/PZEventStubs
+[submodule "Lua"]
+	path = Lua
+	url = https://github.com/omarkmu/PZLuaStubs.git
