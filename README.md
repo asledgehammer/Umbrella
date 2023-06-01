@@ -1,4 +1,4 @@
-# Umrella
+# Umbrella
 ![](https://i.imgur.com/wMKl10y.png)
 
 Umbrella is a collection of EmmyLua typings for Project Zomboid's API. This includes:
