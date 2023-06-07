@@ -20,8 +20,10 @@ Umbrella is a collection of EmmyLua typings for Project Zomboid's API. This incl
 1) **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** or **[vscode](https://code.visualstudio.com/)** installed.
 2) **EmmyLua** **[IDEA plugin](https://plugins.jetbrains.com/plugin/9768-emmylua)** or **[extension](https://marketplace.visualstudio.com/items?itemName=tangzx.emmylua)** installed.
 3) Create new project.
-4) Place typings into project where the EmmyLua plugin or extension requires.
-5) Have fun!
+4) Clone the repository into a folder.
+5) `cd [your folder]`
+6) `git submodule update --remote`
+7) Have fun!
 
 # Support
 
