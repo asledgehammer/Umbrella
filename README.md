@@ -19,11 +19,24 @@ Umbrella is a collection of EmmyLua typings for Project Zomboid's API. This incl
 
 1) **[Vscode](https://code.visualstudio.com/)** installed.
 2) **[Lua Language Server extension](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)** installed.
-3) Create new project.
-4) Clone the repository into a folder.
-5) `cd [your folder]`
-6) `git submodule update --init --remote`
-7) Have fun!
+
+## Basic Install
+
+1) Create new project.
+2) Download the correct version of Umbrella (PZ versions used) from Releases page.
+3) Copy the downloaded folder into your project somewhere.
+
+## Install from Repository
+
+1) Create new project.
+2) Clone the repository into a sub-folder.
+3) `cd [your folder]`
+4) `git submodule update --init --remote`
+
+## Installing Umbrella Globally
+
+If you want to install Umbrella globally, Add a path to Umbrella via this extension setting:
+![global_setup.png](./assets/media/global_setup.png)
 
 If you want to use Umbrella with **IntelliJ IDEA**, you need to use a build from before 2023 as modern **[EmmyLua](https://plugins.jetbrains.com/plugin/9768-emmylua)** doesn't currently support indexing. You can download older builds of IntelliJ [here](https://www.jetbrains.com/idea/download/other.html).
 
