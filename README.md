@@ -20,7 +20,13 @@ Umbrella is a collection of EmmyLua typings for Project Zomboid's API. This incl
 1) **[Vscode](https://code.visualstudio.com/)** installed.
 2) **[Lua Language Server extension](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)** installed.
 
-## Basic Install
+## Addon Manager (VSCode only)
+
+1) Create new project.
+2) Press **Ctrl-Shift-P** and search for ``Lua: Open Addon Manager`` in the context menu that opens.
+3) Search for Umbrella, and click enable.
+
+## Manual Installation
 
 1) Create new project.
 2) Download the correct version of Umbrella (PZ versions used) from Releases page.
