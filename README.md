@@ -1,7 +1,7 @@
 # Umbrella
 ![](https://i.imgur.com/wMKl10y.png)
 
-Umbrella is a collection of EmmyLua typings for Project Zomboid's API. This includes:
+Umbrella is a collection of LuaCAT typings for Project Zomboid's API. This includes:
 - **[Candle](https://github.com/asledgehammer/Candle)**: The exposed Java API typings.
 - **[PZLuaStubs](https://github.com/omarkmu/PZLuaStubs)**: The Lua API typings.
 - **[PZEventStubs](https://github.com/demiurgeQuantified/PZEventStubs)**: The Events API typings.
