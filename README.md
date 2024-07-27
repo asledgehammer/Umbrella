@@ -1,7 +1,7 @@
 # Umbrella
 ![](https://i.imgur.com/wMKl10y.png)
 
-Umbrella is a collection of LuaCAT typings for Project Zomboid's API. This includes:
+Umbrella is a collection of LuaCATS typings for Project Zomboid's API. This includes:
 - **[Candle](https://github.com/asledgehammer/Candle)**: The exposed Java API typings.
 - **[PZLuaStubs](https://github.com/omarkmu/PZLuaStubs)**: The Lua API typings.
 - **[PZEventStubs](https://github.com/demiurgeQuantified/PZEventStubs)**: The Events API typings.
@@ -14,37 +14,57 @@ Umbrella is a collection of LuaCAT typings for Project Zomboid's API. This inclu
 ## Caveats
 - Different Lua environments can behave differently. (vscode plugin, IntelliJ IDEA, etc.) This could cause issues.
 
-## Setup
+# Setup
 
-1) **[Vscode](https://code.visualstudio.com/)** installed.
-2) **[Lua extension](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)** installed.
+## VSCode (Recommended)
 
-## Addon Manager (VSCode only)
+VSCode is recommended as it is the best supported Lua IDE, and its addon manager will automatically update Umbrella.
 
-1) Install [Git](https://git-scm.com/downloads). You may need to restart your computer after installation.
-2) Create new project.
-3) Press **Ctrl-Shift-P** and search for ``Lua: Open Addon Manager`` in the context menu that opens.
-4) Search for Umbrella, and click enable.
+1) Install [VSCode](https://code.visualstudio.com/).
+2) Open and use the extension manager to install the [Lua](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) extension.
+3) Install [Git](https://git-scm.com/downloads). You may need to restart your computer after installation.
+4) Open your project or folder.
+5) Press **Ctrl-Shift-P** and search for ``Lua: Open Addon Manager`` in the context menu that opens.
+6) Search for Umbrella, and click enable. You will need to enable it for any future projects as well.
 
-## Manual Installation
+## IntelliJ IDEA
+
+1) Install the [SumnekoLUA](https://plugins.jetbrains.com/plugin/22315-sumnekolua) plugin.
+2) Download Umbrella from [Releases](https://github.com/asledgehammer/Umbrella/releases/latest) (or clone it).
+3) Open/create your project.
+4) Create a file named ``.luarc.json`` at the root directory of your project with the contents:
+```
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+  "workspace.library": ["path/to/umbrella"],
+  "runtime.version": "Lua 5.1",
+  "runtime.path": [
+    "shared/?.lua",
+    "client/?.lua",
+    "server/?.lua"
+  ],
+  "completion.requireSeparator": "/",
+  "workspace.preloadFileSize": 800,
+  "runtime.builtin": {
+    "debug": "disable",
+    "io": "disable",
+    "package": "disable"
+  }
+}
+```
+5) Change the ``"workspace.library": ["path/to/umbrella"]`` line to the absolute path to where you downloaded Umbrella.
+6) You may need to restart your IDE to apply the changes.
+
+## Manual Installation (Any)
 
 1) Create new project.
-2) Download the correct version of Umbrella (PZ versions used) from Releases page.
-3) Copy the downloaded folder into your project somewhere.
-
-## Install from Repository
-
-1) Create new project.
-2) Clone the repository into a sub-folder.
-3) `cd [your folder]`
-4) `git submodule update --init --remote`
+2) Download the correct version of Umbrella (PZ versions used) from Releases page, or clone it.
+3) Copy the downloaded folder into your project somewhere, or link it as a dependency if your IDE supports it.
 
 ## Installing Umbrella Globally
 
 If you want to install Umbrella globally, Add a path to Umbrella via this extension setting:
 ![global_setup.png](./assets/media/global_setup.png)
-
-If you want to use Umbrella with **IntelliJ IDEA**, you need to use a build from before 2023 as modern **[EmmyLua](https://plugins.jetbrains.com/plugin/9768-emmylua)** doesn't currently support indexing. You can download older builds of IntelliJ [here](https://www.jetbrains.com/idea/download/other.html).
 
 # Support
 
