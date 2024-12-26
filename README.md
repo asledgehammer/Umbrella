@@ -26,6 +26,7 @@ VSCode is recommended as it is the best supported Lua IDE, and its addon manager
 4) Open your project or folder.
 5) Press **Ctrl-Shift-P** and search for ``Lua: Open Addon Manager`` in the context menu that opens.
 6) Search for Umbrella, and click enable. You will need to enable it for any future projects as well.
+   a) For Unstable versions of Project Zomboid, use Umbrella (Unstable).
 
 ## IntelliJ IDEA
 
